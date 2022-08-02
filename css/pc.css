@@ -1,0 +1,191 @@
+/* pc */
+body {
+    /* background: #ccc; */
+    font-size: 20px;
+}
+
+section h2 {
+    font-size: 50px;
+}
+
+.container {
+    width: 100%;
+    /* width: 1440px;
+    margin: 0 auto; */
+    padding-left: 30px;
+    padding-right: 30px;
+    /* outline: 1px solid #333; */
+}
+
+#toggle-btn {
+    display: none;
+}
+
+#main-header {
+    /* border-bottom: 1px solid #ccc; */
+    position: fixed;
+    width: 100%;
+    height: var(--pc-header-height);
+    background: #fff;
+}
+
+#main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#main-header h1 a>img {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gnb ul li {
+    display: inline-block;
+    margin-left: 140px;
+}
+
+/* 메뉴 간격 조정 (910px까지의 메뉴 간격) */
+@media screen and (max-width:910px) {
+    #gnb ul li {
+        margin-left: 80px;
+    }
+}
+
+/* 메인 비주얼 */
+#main-visual {
+    background: #fceead;
+    width: 100%;
+    height: calc(100vh - var(--pc-header-height));
+    box-sizing: content-box;
+    padding-top: var(--pc-header-height);
+}
+
+#main-visual .container {
+    display: flex;
+    background: #fffad1;
+    height: 100%;
+}
+
+#main-visual .title {
+    flex: 1;
+    /* outline: 1px solid #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-visual .title h2 {
+    /* outline: 1px solid red; */
+    font-weight: 500;
+    font-size: 74.4828px;
+    line-height: 90px;
+    margin-bottom: 55px;
+
+    letter-spacing: 0.2em;
+}
+
+/* #main-visual .title p {
+    outline: 1px solid red;
+} */
+
+#main-visual .title p>span {
+    display: block;
+}
+
+#main-visual .title p>span:first-child {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.3em;
+}
+
+#main-visual .title p>span:last-child {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 70px;
+}
+
+#main-visual .img {
+    flex: 1;
+    /* outline: 1px solid #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-visual .img img {
+    width: 75%;
+}
+
+/* vitamin 섹션 */
+#main-section1 {
+    /* background: pink; */
+    height: calc(100vh - var(--pc-header-height));
+}
+
+#main-section1 .container {
+    display: flex;
+    height: 100%;
+    padding: 0;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+#main-section1 .container .col {
+    flex: 1;
+    /* width: 50%; */
+    /* outline: 1px solid #333; */
+
+}
+
+#main-section1 .container .col:first-child {
+    background: var(--main-color);
+    padding-left: 66px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+#main-section1 .container .col:first-child .info {
+    max-width: 570px;
+    margin-bottom: 33px;
+}
+
+#main-section1 .container .info h2 {
+    margin-bottom: 15px;
+    line-height: 72px;
+}
+
+#main-section1 .container .info p {
+    font-size: 20px;
+    line-height: 29px;
+}
+
+#main-section1 .container .info .sub-title {
+    font-size: 30px;
+    line-height: 43px;
+    margin-bottom: 30px;
+}
+
+#main-section1 .container .col:last-child img {
+    width: 100%;
+}
+
+#main-section1 .container .col:last-child {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#main-section1 .container .btn-detail {
+    margin-top: 33px;
+}
