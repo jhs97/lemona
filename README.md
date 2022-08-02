@@ -9,6 +9,7 @@
 2. main visual 영역 애니메이션
 3. media query와 flex layout 활용
 4. 동영상 모달창 구현
+5. smooth page scroll
 
 ## 라이브러리
 - 제이쿼리
